@@ -2,7 +2,7 @@
 
 function dogLover()
 {
-    if(confirm("Do you like dogs?") == true)
+    if(confirm("Do you love dogs? and want to meet Lacy?") == true)
     {
         return true;
     }
