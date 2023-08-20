@@ -1,4 +1,16 @@
+'use strict'
 
+function dogLover()
+{
+    if(confirm("Do you like dogs?") == true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 const jkButton = document.getElementById("jkButton");
 const jkContainer = document.getElementById("jkContainer");
 

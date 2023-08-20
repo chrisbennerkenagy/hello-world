@@ -3,6 +3,19 @@
     <head>
         <title>Lacy's World</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            function dogLover()
+            {
+                return confirm("Do you like dogs?")
+            }
+            window.onload = function()
+            {
+                if(!dogLover())
+                {
+                    window.location.href = "https://en.wikipedia.org/wiki/Dog#:~:text=Dogs%20perform%20many%20roles%20for,friend%22%20in%20the%20Western%20world.";
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
