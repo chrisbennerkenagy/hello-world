@@ -1,64 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8DF9E6; /* Teal background */
+    margin: 0;
+    padding: 0;
+}
 
-            body
-             {
-                font-family: Arial, sans-serif;
-                background-color: #8DF9E6;
-                margin: 0;
-                padding: 0;
-             }
-             header
-             {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 1rem;
-             }
-             nav a
-             {
-                color: #fff;
-                text-decoration: none;
-                margin: 0 1rem;
-             }
-             main
-             {  
-                max-width:800px;
-                margin: 2rem auto;
-                padding: 0 2rem;
-                background-color: #F9FBE8;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            
-             }
-             article 
-             {
-                margin-bottom: 2rem;
-                padding: 1rem;
-                border-bottom: 1px solid #ccc;
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
 
-             }
-             h2
-             {
-                color: #3600FF;
-                text-align: center;
-        
-             }
-             img
-             {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1)
-                
-             }
-             p
-             {
-                color: #333;
-             }
-             footer
-             {
-                background-color: #333;
-                text-align: center;
-                padding: 1rem;
-             }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    background-color: #F9FBE8; /* Light background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    color: #3600FF; /* Teal color */
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
