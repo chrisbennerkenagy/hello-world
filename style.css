@@ -27,11 +27,29 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-article {
+article 
+{
     margin-bottom: 2rem;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
+#jkButton 
+{
+    background-color: #3600FF; 
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.joke-container 
+{
+    font-style: italic;
+    color: #888;
+    text-align: right;
+}
+
 
 h2 {
     color: #3600FF; /* Teal color */
