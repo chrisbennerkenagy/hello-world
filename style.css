@@ -33,21 +33,33 @@ article
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
+.image-button-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
 #jkButton 
 {
     background-color: #3600FF; 
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .joke-container 
 {
     font-style: italic;
     color: #888;
-    text-align: right;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.25rem;
 }
 
 
