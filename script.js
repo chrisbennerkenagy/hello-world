@@ -1,6 +1,6 @@
 
-const jkButton = document.getElementById("jokeButton");
-const jkContainer = document.getElementById("jokeContainer");
+const jkButton = document.getElementById("jkButton");
+const jkContainer = document.getElementById("jkContainer");
 
 const jokes = [
   "What looks like a dog, eats dog food, lives in a doghouse, and is very dangerous?, A dog with a machete.",
