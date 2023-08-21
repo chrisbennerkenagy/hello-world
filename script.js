@@ -36,7 +36,7 @@ let positionX = 0;
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
         positionX += 10;
-    } else if (event.key === 'ArrowLeft') {
+    } if (event.key === 'ArrowLeft') {
         positionX -= 10;
     }
     
