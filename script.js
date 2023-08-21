@@ -33,16 +33,14 @@ jkButton.addEventListener("click", () => {
 const dog = document.getElementById('dog');
 let positionX = 0;
 
-document.addEventListener('keydown', (event) =>
- {
-    if (event.key === 'ArrowRight') 
-    {
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
         positionX += 10;
-        dog.style.left = `${positionX}px`;
-    } else if (event.key === 'ArrowLeft') 
-    {
+    } else if (event.key === 'ArrowLeft') {
         positionX -= 10;
-        dog.style.left = `${positionX}px`;  
     }
+    
+    dog.style.left = `${positionX}px`;
 });
+
 
