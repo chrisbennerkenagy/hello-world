@@ -117,16 +117,16 @@ footer
     padding: 1rem;
     color: #fff;
 }
-#walk-area 
-{
+#walk-area {
     background-image: url('beach.jpg'); 
-    width: 600px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 300px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover;
+    justify-content: center;
     margin-top: 2rem;
 }
 
