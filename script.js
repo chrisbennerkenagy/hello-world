@@ -24,7 +24,8 @@ const jokes =
     ];
       
 
-jkButton.addEventListener("click", () => {
+jkButton.addEventListener("click", () =>
+ {
     const randomIndex = Math.floor(Math.random() * jokes.length);
     const joke = jokes[randomIndex];
     jkContainer.textContent = joke;
@@ -33,7 +34,8 @@ jkButton.addEventListener("click", () => {
 const dog = document.getElementById('dog');
 let positionX = 0;
 
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', (event) =>
+ {
     console.log("Key pressed:", event.key);
     if (event.key === 'ArrowRight') {
         positionX += 10;
