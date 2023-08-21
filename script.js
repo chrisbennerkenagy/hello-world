@@ -34,13 +34,15 @@ const dog = document.getElementById('dog');
 let positionX = 0;
 
 document.addEventListener('keydown', (event) => {
+    console.log("Key pressed:", event.key);
     if (event.key === 'ArrowRight') {
         positionX += 10;
-    } if (event.key === 'ArrowLeft') {
+    } else if (event.key === 'ArrowLeft') {
         positionX -= 10;
     }
-    
+    console.log("New positionX:", positionX);
     dog.style.left = `${positionX}px`;
 });
+
 
 
