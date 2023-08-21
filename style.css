@@ -1,30 +1,37 @@
-body {
+body 
+{
     font-family: Arial, sans-serif;
     background-color: #8DF9E6; /* Teal background */
     margin: 0;
     padding: 0;
 }
 
-header {
+header 
+{
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
-nav a {
+nav a 
+{
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
 }
 
-main {
+main
+{
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 2rem;
     background-color: #F9FBE8; /* Light background */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 article 
@@ -82,12 +89,14 @@ article
 }
 
 
-h2 {
+h2
+{
     color: #3600FF; /* Teal color */
     text-align: center;
 }
 
-img {
+img 
+{
     max-width: 100%;
     height: auto;
     display: block;
@@ -96,7 +105,8 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-p {
+p
+{
     color: #333;
 }
 
@@ -117,6 +127,7 @@ footer
     flex-direction: column;
     align-items: center;
     background-size: cover;
+    margin-top: 2rem;
 }
 
 
