@@ -40,9 +40,9 @@ document.addEventListener('keydown', (event) =>
         positionX += 10;
         dog.style.left = `${positionX}px`;
     }
-    if (event.key === 'ArrowLeft')
+    else if (event.key === 'ArrowLeft')
     {
-        positionX += -10;
+        positionX -= 10;
         dog.style.right = `${positionX}px`;
     }
 });

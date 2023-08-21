@@ -100,25 +100,31 @@ p {
     color: #333;
 }
 
-#walk-area
- {
+#walk-area 
+{
+    background-image: url('beach.jpg'); 
+    width: 600px;
+    height: 300px;
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 2rem auto;
-    border: 2px solid #3600FF;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #F9FBE8;
-    max-width: 800px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: flex-end;
 }
 
-#dog 
-{
-    max-width: 100%;
-    height: auto;
+.header-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with some transparency */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center;
+    margin-bottom: 10px; /* Add margin between headers and image */
 }
+
+#dog {
+    width: 50px;
+    height: 50px;
+}
+
 
 footer 
 {
