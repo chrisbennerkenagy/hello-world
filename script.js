@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function()
- {
+{
     const jkButton = document.getElementById("jkButton");
     const jkContainer = document.getElementById("jkContainer");
     const dog = document.getElementById('dog');
     let positionX = 0;
+    const repeatButton = document.getElementById("repeatButton");
+    const imageUrl = "lacy_face.jpg";
+
+    repeatButton.addEventListener("click", function() 
+    {
+        const repeatCount = askNumber("How many times do you want to repeat the image?");
+        repeatImage(imageUrl, repeatCount);
+    });
 
     const jokes =
     [
@@ -54,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function()
         }
     }
 
-    function dogLover() {
+    function dogLover()
+    {
         return confirm("Do you love dogs? and want to meet Lacy?");
     }
 
@@ -63,35 +72,26 @@ document.addEventListener("DOMContentLoaded", function()
     } else {
         greeting();
     }
-});
-function askNumber(promptMessage) 
-{
+    function askNumber(promptMessage) 
+    {
     const userInput = prompt(promptMessage);
     const parsedNumber = parseInt(userInput);
     return isNaN(parsedNumber) ? 0 : parsedNumber;
-}
-function repeatImage(imageUrl, repeatCount) 
-{
+    }
+    function repeatImage(imageUrl, repeatCount) 
+    {
     const mainDiv = document.querySelector(".image-repeater");
 
-    for (let i = 0; i < repeatCount; i++)
-    {
+        for (let i = 0; i < repeatCount; i++)
+        {
         const img = document.createElement("img");
         img.src = imageUrl;
         img.alt = "Dog";
         mainDiv.appendChild(img);
+        }
     }
-}
 
-document.addEventListener("DOMContentLoaded", function() 
-{
-    const repeatButton = document.getElementById("repeatButton");
-    const imageUrl = "lacy_face.jpg";
-
-    repeatButton.addEventListener("click", function() 
-    {
-        const repeatCount = askNumber("How many times do you want to repeat the image?");
-        repeatImage(imageUrl, repeatCount);
-    });
 });
+
+
 
