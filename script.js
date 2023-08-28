@@ -64,3 +64,34 @@ document.addEventListener("DOMContentLoaded", function()
         greeting();
     }
 });
+function askNumber(promptMessage) 
+{
+    const userInput = prompt(promptMessage);
+    const parsedNumber = parseInt(userInput);
+    return isNaN(parsedNumber) ? 0 : parsedNumber;
+}
+function repeatImage(imageUrl, repeatCount) 
+{
+    const mainDiv = document.querySelector(".image-repeater");
+
+    for (let i = 0; i < repeatCount; i++)
+    {
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        img.alt = "Dog";
+        mainDiv.appendChild(img);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() 
+{
+    const repeatButton = document.getElementById("repeatButton");
+    const imageUrl = "lacy_face.jpg";
+
+    repeatButton.addEventListener("click", function() 
+    {
+        const repeatCount = askNumber("How many times do you want to repeat the image?");
+        repeatImage(imageUrl, repeatCount);
+    });
+});
+
