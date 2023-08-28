@@ -74,28 +74,27 @@ function greeting()
     alert("Correct! Dogs are the best pets!");
 }
 
-const repeatedImages = document.getElementById("repeatedImages");
-
-
-let funnyRating;
-
-do 
+function displayFunnyRatingImages() 
 {
-    funnyRating = parseInt(prompt("How funny was that joke, on a scale of 1-10"), 10);
+    const repeatedImages = document.getElementById("repeatedImages");
+    let funnyRating;
 
-    if (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10) 
+    do 
     {
-        alert("Please enter a valid number between 1 and 10.");
+        funnyRating = parseInt(prompt("How funny was that joke, on a scale of 1-10"), 10);
+
+        if (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10)
+        {
+            alert("Please enter a valid number between 1 and 10.");
+        }
+    } 
+    while (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10);
+
+    for (let i = 0; i < funnyRating; i++) 
+    {
+        const image = document.createElement("img");
+        image.src = "lacy_face.jpg";
+        image.classList.add("rating");
+        repeatedImages.appendChild(image);
     }
-} 
-while (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10);
-
-for (let i = 0; i < funnyRating; i++)
-{
-    const image = document.createElement("img");
-    image.src = "lacy_face.jpg";
-    image.classList.add("rating");
-    repeatedImages.appendChild(image);
 }
-
-
