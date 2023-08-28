@@ -73,17 +73,24 @@ function greeting()
     
     alert("Correct! Dogs are the best pets!");
 }
+document.addEventListener("DOMContentLoaded", function() 
+{
+    const displayImagesButton = document.getElementById("displayImagesButton");
+    displayImagesButton.addEventListener("click", displayFunnyRatingImages);
+});
 
 function displayFunnyRatingImages() 
 {
     const repeatedImages = document.getElementById("repeatedImages");
+    repeatedImages.innerHTML = ''; 
+
     let funnyRating;
 
-    do 
+    do
     {
         funnyRating = parseInt(prompt("How funny was that joke, on a scale of 1-10"), 10);
 
-        if (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10)
+        if (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10) 
         {
             alert("Please enter a valid number between 1 and 10.");
         }
@@ -98,3 +105,4 @@ function displayFunnyRatingImages()
         repeatedImages.appendChild(image);
     }
 }
+
