@@ -1,5 +1,3 @@
-// script.js
-
 function dogLover() {
     return confirm("Do you love dogs? and want to meet Lacy?");
 }
@@ -63,4 +61,5 @@ function greeting()
         console.log("There was no input, try again");
         userName = prompt("What is your name?");
         greeting();
+    }
 }
