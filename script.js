@@ -52,18 +52,50 @@ document.addEventListener('keydown', (event) =>
 
 function greeting() 
 {
-    let userName = prompt("What is your name?");
-    
-    if (userName !== null && userName !== "") 
+    let userName;
+    do 
     {
-        const greetingContainer = document.getElementById("greetingContainer");
-        greetingContainer.textContent = "Hello " + userName + ", welcome to Lacy's World!";
-    } else 
-    {
-        console.log("There was no input, try again");
         userName = prompt("What is your name?");
-        greeting(); // Call the function recursively to ensure a valid name is provided
+    } 
+    while (userName === null || userName.trim() === "");
+    
+    const greetingContainer = document.getElementById("greetingContainer");
+    greetingContainer.textContent = "Hello " + userName + ", let me tell you about myself";
+    
+    // Ask the user the pet question
+    let petGuess;
+    do
+    {
+        petGuess = prompt("What is the best pet?");
+        petGuess = petGuess.toLowerCase(); // Convert to lowercase
+    } 
+    while (petGuess !== "dog");
+    
+    alert("Correct! Dogs are the best pets!");
+}
+
+const repeatedImages = document.getElementById("repeatedImages");
+
+
+let funnyRating;
+
+do 
+{
+    funnyRating = parseInt(prompt("How funny was that joke, on a scale of 1-10"), 10);
+
+    if (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10) 
+    {
+        alert("Please enter a valid number between 1 and 10.");
     }
+} 
+while (isNaN(funnyRating) || funnyRating < 1 || funnyRating > 10);
+
+for (let i = 0; i < funnyRating; i++)
+{
+    const image = document.createElement("img");
+    image.src = "lacy_face.jpg";
+    image.classList.add("rating");
+    repeatedImages.appendChild(image);
 }
 
 
