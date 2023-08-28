@@ -36,17 +36,21 @@ jkButton.addEventListener("click", () =>
 const dog = document.getElementById('dog');
 let positionX = 0;
 
-// Your existing code here
-
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
+document.addEventListener('keydown', (event) =>
+ {
+    console.log("Key pressed:", event.key);
+    if (event.key === 'ArrowRight') 
+    {
         positionX += 10;
-    } else if (event.key === 'ArrowLeft') {
+    } 
+    else if (event.key === 'ArrowLeft')
+    {
         positionX -= 10;
     }
     console.log("New positionX:", positionX);
     dog.style.left = `${positionX}px`;
 });
+
 
 function greeting() 
 {
