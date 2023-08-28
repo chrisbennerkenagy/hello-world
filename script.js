@@ -1,5 +1,3 @@
-// script.js
-
 function dogLover() {
     return confirm("Do you love dogs? and want to meet Lacy?");
 }
@@ -25,9 +23,9 @@ const jokes =
         "Why do dogs like conjunctions? They just love buts",
         "How did the little Scottish dog react when he met the Loch Ness Monster, He was *Terrier-fied*",
         "Why was the dog stealing Shingles? He wanted to become a *woofer*",
+    
     ];
       
-
 jkButton.addEventListener("click", () =>
  {
     const randomIndex = Math.floor(Math.random() * jokes.length);
@@ -73,6 +71,7 @@ function greeting()
     
     alert("Correct! Dogs are the best pets!");
 }
+
 document.addEventListener("DOMContentLoaded", function() 
 {
     const displayImagesButton = document.getElementById("displayImagesButton");
@@ -105,4 +104,3 @@ function displayFunnyRatingImages()
         repeatedImages.appendChild(image);
     }
 }
-
