@@ -44,12 +44,19 @@ document.addEventListener("DOMContentLoaded", function() {
         if (userName !== null && userName !== "") {
             const greetingContainer = document.getElementById("greetingContainer");
             greetingContainer.textContent = "Hello " + userName + ", welcome to Lacy's World!";
+            
+            let bestPet = "";
+            while (bestPet.toLowerCase() !== "dog") {
+                bestPet = prompt("What is the best pet?");            
+            }
+            alert("Correct! Dogs are indeed the best pets!");
         } else {
             console.log("There was no input, try again");
             userName = prompt("What is your name?");
             greeting();
         }
     }
+    
 
     function dogLover() {
         return confirm("Do you love dogs? and want to meet Lacy?");
