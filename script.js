@@ -62,6 +62,5 @@ function greeting()
     {
         console.log("There was no input, try again");
         userName = prompt("What is your name?");
-        greeting(); // Call the function recursively to ensure a valid name is provided
-    }
+        greeting();
 }
