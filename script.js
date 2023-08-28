@@ -8,6 +8,10 @@ window.onload = function() {
     if (!dogLover()) {
         window.location.href = "https://en.wikipedia.org/wiki/Dog#:~:text=Dogs%20perform%20many%20roles%20for,friend%22%20in%20the%20Western%20world.";
     }
+    else
+    {
+        greeting();
+    }
 }
 
 const jkButton = document.getElementById("jkButton");
@@ -46,5 +50,18 @@ document.addEventListener('keydown', (event) =>
     dog.style.left = `${positionX}px`;
 });
 
-
+function greeting()
+{
+   let userName = prompt("What is your name?");
+   if(userName!== null && userName !== "")
+   {
+    console.log("Hello " +userName+ " , welcome to Lacy's World!");
+   }
+   else
+   {
+    console.log("There was not input, try again");
+    userName = prompt("what is your name?");
+    greeting();
+   }
+}
 
