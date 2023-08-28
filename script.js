@@ -50,18 +50,20 @@ document.addEventListener('keydown', (event) =>
     dog.style.left = `${positionX}px`;
 });
 
-function greeting()
+function greeting() 
 {
-   let userName = prompt("What is your name?");
-   if(userName!== null && userName !== "")
-   {
-    console.log("Hello " +userName+ " , welcome to Lacy's World!");
-   }
-   else
-   {
-    console.log("There was not input, try again");
-    userName = prompt("what is your name?");
-    greeting();
-   }
+    let userName = prompt("What is your name?");
+    
+    if (userName !== null && userName !== "") 
+    {
+        const greetingContainer = document.getElementById("greetingContainer");
+        greetingContainer.textContent = "Hello " + userName + ", welcome to Lacy's World!";
+    } else 
+    {
+        console.log("There was no input, try again");
+        userName = prompt("What is your name?");
+        greeting(); // Call the function recursively to ensure a valid name is provided
+    }
 }
+
 
