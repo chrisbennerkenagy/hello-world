@@ -36,9 +36,9 @@ jkButton.addEventListener("click", () =>
 const dog = document.getElementById('dog');
 let positionX = 0;
 
-document.addEventListener('keydown', (event) =>
- {
-    console.log("Key pressed:", event.key);
+// Your existing code here
+
+document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
         positionX += 10;
     } else if (event.key === 'ArrowLeft') {
