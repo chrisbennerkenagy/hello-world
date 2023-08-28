@@ -144,3 +144,34 @@ footer {
     margin-top: 1rem;
     color: white;
 }
+/* Styles for the Repeat Image button and display area */
+.image-repeater {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#repeatButton {
+    background-color: #3600FF;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.repeat-image-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.repeat-image-display img {
+    max-width: 100px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
