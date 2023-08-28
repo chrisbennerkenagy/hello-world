@@ -1,24 +1,28 @@
-body {
+body 
+{
     font-family: Arial, sans-serif;
     background-color: #8DF9E6; /* Teal background */
     margin: 0;
     padding: 0;
 }
 
-header {
+header 
+{
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
-nav a {
+nav a 
+{
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
 }
 
-main {
+main
+{
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 2rem;
@@ -30,23 +34,25 @@ main {
     align-items: center;
 }
 
-article {
+article 
+{
     margin-bottom: 2rem;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
-
-.image-button-container {
+.image-button-container
+{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 1rem;
-}
 
-#jkButton {
-    background-color: #3600FF;
+}
+#jkButton 
+{
+    background-color: #3600FF; 
     color: #fff;
     border: none;
     padding: 1rem 2rem;
@@ -55,7 +61,8 @@ article {
     margin-top: 1rem;
 }
 
-.joke-container {
+.joke-container 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,14 +72,14 @@ article {
     margin-top: 1rem;
     font-size: 1.25rem;
 }
-
-.jkContainer {
+.jkContainer
+{
     font-style: italic;
     color: #888;
     font-size: 1.25rem;
 }
-
-.joke-display {
+.joke-display
+ {
     border: 1px solid #ccc; /* Add border */
     padding: 1rem;
     border-radius: 5px;
@@ -81,12 +88,15 @@ article {
     font-size: 1.25rem;
 }
 
-h2 {
+
+h2
+{
     color: #3600FF; /* Teal color */
     text-align: center;
 }
 
-img {
+img 
+{
     max-width: 100%;
     height: auto;
     display: block;
@@ -95,19 +105,20 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-p {
+p
+{
     color: #333;
 }
 
-footer {
+footer 
+{
     background-color: #333;
     text-align: center;
     padding: 1rem;
     color: #fff;
 }
-
 #walk-area {
-    background-image: url('beach.jpg');
+    background-image: url('beach.jpg'); 
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -120,33 +131,30 @@ footer {
     margin-top: 2rem;
 }
 
-.header-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
+
+.header-container
+ {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    border-radius: 5px; 
     text-align: center;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#dog {
+#dog 
+{
     left: 0;
     bottom: 0;
     width: 50px;
     height: 50px;
     position: absolute;
 }
-
-#greetingContainer {
+#greetingContainer 
+{
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin-top: 1rem;
-    color: white;
-}
-
-.rating {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    color: #333;
 }
